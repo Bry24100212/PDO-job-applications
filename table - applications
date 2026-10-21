@@ -1,0 +1,11 @@
+CREATE TABLE applications (
+    applicant_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    preferred_language VARCHAR(50) NOT NULL,
+    years_experience INT NOT NULL,
+    primary_framework VARCHAR(50) NOT NULL,
+    portfolio_url VARCHAR(255),
+    date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
